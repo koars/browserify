@@ -72,5 +72,5 @@ describe('In development mode the middleware', function() {
 			.expect(/js\/index.js1/)
 			.expect('Content-Type', /text\/javascript/)
 			.end(done);
-	})
+	});
 });
