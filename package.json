@@ -1,0 +1,39 @@
+{
+  "name": "koars-browserify",
+  "version": "1.0.0",
+  "description": "Compile a browserify bundle and serve it as middleware.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/koars/browserify.git"
+  },
+  "dependencies": {
+    "koars-utils": "^1.0.0",
+    "browserify": "^6.0.3",
+    "watchify": "^2.0.0"
+  },
+  "devDependencies": {
+    "jshint": "^2.5.6",
+    "jshint-stylish": "^1.0.0",
+    "koa": "^0.12.2",
+    "mocha": "^1.21.4",
+    "rewire": "^2.1.0",
+    "sinon": "^1.10.3",
+    "supertest": "^0.14.0"
+  },
+  "scripts": {
+    "test": "NODE_ENV=test mocha --harmony&& jshint --reporter node_modules/jshint-stylish/stylish.js"
+  },
+  "keywords": [
+    "koars",
+    "koa",
+    "browserify"
+  ],
+  "author": "Florian Albertz",
+  "license": "BSD-3",
+  "jshintConfig": {
+    "node": true,
+    "mocha": true,
+    "esnext": true
+  }
+}
