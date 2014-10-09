@@ -1,5 +1,7 @@
 koars-browserify
 ================
+[![Build Status](https://img.shields.io/travis/koars/browserify.svg?style=flat)](https://travis-ci.org/koars/browserify)
+
 This module provides koa middleware to compile and serve a browserify bundle.
 
 The following will serve the compiled contents of `js/index.js` on every route.
