@@ -1,11 +1,12 @@
 var browserify = require('browserify');
 var watchify = require('watchify');
 var koars = require('koars-utils')({module: 'assets', asset:'js'});
+var path = require('path');
 
-module.exports = function(src, dest, excludes) {
+module.exports = function(src, excludes) {
 	//Setup our cache, timestamp and watchify instance
 	var cache, time = new Date();
-	var w = watchify(browserify(src, watchify.args));
+	var w = watchify(browserify(path.join(process.cwd(), src), watchify.args));
 
 	//Exclude all specified modules
 	if(excludes) excludes.forEach(w.exclude.bind(w));
